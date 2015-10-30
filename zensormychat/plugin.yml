@@ -1,0 +1,38 @@
+main: me.zensormychat.main.main
+name: Zensormychat 
+version: 6.1
+author: ModdyLP
+commands:
+  zmcadd:
+    usage: /<command> Wort
+    description: adds forbidden words
+  zmchelp:
+    usage: /<command>
+    description: help to Zensormychat
+  zmclist:
+    usage: /<command>
+    description: list off all words
+  zmcdel:
+    usage: /<command> Wort
+    description: Delete a Word from the List
+
+permissions:
+  zensormychat.*:
+    description: Erlaubt Zugriff auf alle ZensormyChat Commands
+    children:
+      zensormychat.add: true
+      zensormychat.help: true
+      zensormychat.list: true
+      zensormychat.del: true
+      zensormychat.bypass: true
+  zensormychat.add:
+    description: Erlaubt die Benutzung des Add Commands
+  zensormychat.del:
+    description: Erlaubt die Benutzung des del Commands
+
+  zensormychat.help:
+    description: Erlaubt die Benutzung des help Commands
+  zensormychat.list:
+    description: Erlaubt die Benutzung des list Commands
+  zensormychat.bypass:
+    description: Erlaubt trotz filter die Wörter zu schreiben
